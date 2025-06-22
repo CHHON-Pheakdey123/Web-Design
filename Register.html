@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoomRental - Find Your Perfect Space</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Room<span>Rental</span></a>
+      
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="apartment.html">Apartments</a></li>
+          <li><a href="hotel.html">Hotels</a></li>
+          <li><a href="condo.html">Condos</a></li>
+          <li><a href="standard-rooms.html">Rooms-Rent</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-actions">
+        <button id="loginBtn" class="btn-login">Login</button>
+        <button id="registerBtn" class="btn-register">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Find Your Perfect Room Quickly & Easily</h2>
+      <p>Discover affordable rooms for rent in your preferred locations</p>
+      <form class="search-form">
+        <input type="text" placeholder="Search by location, type, price...">
+        <select>
+          <option value="">All Types</option>
+          <option value="apartment">Apartment</option>
+          <option value="hotel">Hotel</option>
+          <option value="condo">Condo</option>
+          <option value="room">Room</option>
+        </select>
+        <button type="submit" class="btn-primary">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 style="text-align: center; margin: 40px 0; color: var(--primary);">Featured Properties</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow);">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=870&q=80" alt="Apartment" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 20px;">
+          <h3 style="color: var(--primary); margin-bottom: 10px;">Modern Apartment</h3>
+          <p style="color: var(--success); font-weight: bold; margin-bottom: 15px;">$850/month</p>
+          <p style="color: var(--gray); margin-bottom: 20px;">Spacious 2-bedroom apartment in the city center with modern amenities.</p>
+          <button class="btn btn-accent" style="width: 100%;">View Details</button>
+        </div>
+      </div>
+      
+      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow);">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=870&q=80" alt="Hotel" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 20px;">
+          <h3 style="color: var(--primary); margin-bottom: 10px;">Luxury Hotel Suite</h3>
+          <p style="color: var(--success); font-weight: bold; margin-bottom: 15px;">$120/night</p>
+          <p style="color: var(--gray); margin-bottom: 20px;">Premium suite with city view, king bed, and exclusive amenities.</p>
+          <button class="btn btn-accent" style="width: 100%;">View Details</button>
+        </div>
+      </div>
+      
+      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow);">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=870&q=80" alt="Condo" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 20px;">
+          <h3 style="color: var(--primary); margin-bottom: 10px;">Premium Condo</h3>
+          <p style="color: var(--success); font-weight: bold; margin-bottom: 15px;">$1,200/month</p>
+          <p style="color: var(--gray); margin-bottom: 20px;">Luxury condo with gym, pool, and 24/7 security in a prime location.</p>
+          <button class="btn btn-accent" style="width: 100%;">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay" id="authModal">
+    <div class="auth-modal">
+      <div class="modal-header">
+        <h2 id="modalTitle">Login to Your Account</h2>
+        <button class="close-modal" id="closeModal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="modal-tabs">
+        <button class="tab-btn active" data-tab="login">Login</button>
+        <button class="tab-btn" data-tab="register">Register</button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Login Form -->
+        <div id="loginForm" class="form-container active">
+          <div class="social-login">
+            <button class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i> Continue with Facebook
+            </button>
+            <button class="social-btn google">
+              <i class="fab fa-google"></i> Continue with Google
+            </button>
+            <button class="social-btn apple">
+              <i class="fab fa-apple"></i> Continue with Apple
+            </button>
+          </div>
+          
+          <div class="divider">
+            or login with email
+          </div>
+          
+          <form id="loginAccountForm">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="toggle-password" id="togglePassword">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+            </div>
+            <div class="remember-me">
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <button type="submit" class="auth-btn">Login to Account</button>
+          </form>
+        </div>
+        
+        <!-- Register Form -->
+        <div id="registerForm" class="form-container">
+          <form id="createAccountForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter your last name" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="regEmail">Email Address</label>
+              <input type="email" id="regEmail" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regPassword">Password</label>
+                <div class="password-container">
+                  <input type="password" id="regPassword" placeholder="Create a password" required>
+                  <span class="toggle-password" id="toggleRegPassword">
+                    <i class="fas fa-eye"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="password-container">
+                  <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                  <span class="toggle-password" id="toggleConfirmPassword">
+                    <i class="fas fa-eye"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="remember-me">
+              <input type="checkbox" id="terms" required>
+              <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+            
+            <button type="submit" class="auth-btn">Create Account</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <span id="switchText">Don't have an account? <a id="switchToRegister">Sign Up</a></span>
+      </div>
+    </div>
+  </div>
+  <script src="Register.js"></script>
+</body>
+</html>

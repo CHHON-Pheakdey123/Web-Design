@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room - RoomRental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Room<span>Rental</span></a>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apartment.html">Apartments</a></li>
+                    <li><a href="hotel.html">Hotels</a></li>
+                    <li><a href="condo.html">Condos</a></li>
+                    <li><a href="standard-rooms.html" class="active">Standard Rooms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Booking Container -->
+    <div class="container">
+        <div class="booking-container">
+            <!-- Room Details -->
+            <div class="room-details">
+                <h2 id="room-title">Deluxe Room</h2>
+                <img id="room-image" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Deluxe Room" class="room-image">
+                <p id="room-description">Our deluxe room offers an exceptional stay experience with breathtaking city views. This room features modern furnishings and premium services.</p>
+                
+                <div class="room-features">
+                    <h3>Amenities & Services</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <span>Two King Beds</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <span>High-speed Internet</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <span>50" LCD TV</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                            <span>Air Conditioning</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bath"></i>
+                            </div>
+                            <span>Premium Bathroom</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <span>Morning Coffee</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-details">
+                    <h3>Price Summary</h3>
+                    <div class="price-item">
+                        <span>Room Price/Night</span>
+                        <span id="room-price">$120</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Stay Duration (3 Nights)</span>
+                        <span>3</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Taxes & Fees</span>
+                        <span>$18</span>
+                    </div>
+                    <div class="price-item" style="border-bottom: 2px solid #333;">
+                        <span>Discount</span>
+                        <span style="color: #28a745;">-$30</span>
+                    </div>
+                    <div class="price-item">
+                        <strong>Total</strong>
+                        <strong id="total-price" class="total-price">$348</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Booking Form -->
+            <div class="booking-form">
+                <h2>Booking Information</h2>
+                
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span style="color:red;">*</span></label>
+                        <input type="text" id="fullName" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email <span style="color:red;">*</span></label>
+                        <input type="email" id="email" required placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span style="color:red;">*</span></label>
+                        <input type="tel" id="phone" required placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="date-group">
+                        <div class="form-group">
+                            <label for="checkIn">Check-in Date <span style="color:red;">*</span></label>
+                            <input type="date" id="checkIn" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="checkOut">Check-out Date <span style="color:red;">*</span></label>
+                            <input type="date" id="checkOut" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Number of Guests <span style="color:red;">*</span></label>
+                        <select id="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5+ Guests</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" rows="4" placeholder="If you have any special requests, please enter them here..."></textarea>
+                    </div>
+                    
+                    <div class="payment-options">
+                        <h3>Payment Options</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method active">
+                                <i class="fab fa-cc-visa"></i>
+                                <div>Credit Card</div>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fab fa-paypal"></i>
+                                <div>PayPal</div>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>Pay on Arrival</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 20px;">
+                            <label for="cardNumber">Card Number <span style="color:red;">*</span></label>
+                            <input type="text" id="cardNumber" required placeholder="xxxx xxxx xxxx xxxx">
+                        </div>
+                        
+                        <div class="date-group">
+                            <div class="form-group">
+                                <label for="expiryDate">Expiry Date <span style="color:red;">*</span></label>
+                                <input type="text" id="expiryDate" required placeholder="MM/YY">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cvv">CVV <span style="color:red;">*</span></label>
+                                <input type="text" id="cvv" required placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-book">Book Room Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Confirmation Popup -->
+    <div class="confirmation" id="confirmation">
+        <div class="confirmation-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Booking Successful!</h2>
+            <p>Thank you for booking with RoomRental. We've sent a confirmation email to <span id="user-email"></span>.</p>
+            <p>Your booking reference is: <strong>RRB-2023-8542</strong></p>
+            <p>Please arrive before 2:00 PM on your check-in date.</p>
+            <button class="btn-close" id="closeConfirmation">OK</button>
+        </div>
+    </div>
+    
+    <!-- Footer matching index.html -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Room<span>Rental</span></div>
+                <p>Your trusted partner for quality accommodations in Cambodia.</p>
+                <p>We offer the best apartments, hotels, condos, and standard rooms at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-phone"></i> +855 12 345 678</a>
+                    <a href="#"><i class="fas fa-envelope"></i> info@roomrental.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> #123, Street 456, Phnom Penh</a>
+                    <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="apartment.html"><i class="fas fa-building"></i> Apartments</a>
+                    <a href="hotel.html"><i class="fas fa-hotel"></i> Hotels</a>
+                    <a href="condo.html"><i class="fas fa-home"></i> Condos</a>
+                    <a href="standard-rooms.html"><i class="fas fa-bed"></i> Standard Rooms</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and rental deals</p>
+                <form>
+                    <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:4px; border:none;">
+                    <button type="submit" class="btn-close" style="width:100%; margin-top: 10px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 RoomRental. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="booking.js"></script>
+
+</body>
+</html>

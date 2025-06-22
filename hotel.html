@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels - RoomRental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Room<span>Rental</span></a>
+      
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apartment.html">Apartments</a></li>
+          <li><a href="hotel.html" class="active">Hotels</a></li>
+          <li><a href="condo.html">Condos</a></li>
+          <li><a href="standard-rooms.html">Rooms-Rent</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="register.html" class="btn-register">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Find Your Perfect Hotel</h2>
+    
+    <div class="filters">
+      <div class="filter-grid">
+        <div class="filter-group">
+          <label for="price-range">Price Range</label>
+          <select id="price-range">
+            <option value="">All Prices</option>
+            <option value="0-100">$0 - $100</option>
+            <option value="100-200">$100 - $200</option>
+            <option value="200-300">$200 - $300</option>
+            <option value="300+">$300+</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="rating">Guest Rating</label>
+          <select id="rating">
+            <option value="">Any Rating</option>
+            <option value="4.5">4.5+ (Excellent)</option>
+            <option value="4">4.0+ (Very Good)</option>
+            <option value="3.5">3.5+ (Good)</option>
+            <option value="3">3.0+ (Average)</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="amenities">Amenities</label>
+          <select id="amenities">
+            <option value="">All Amenities</option>
+            <option value="pool">Swimming Pool</option>
+            <option value="spa">Spa</option>
+            <option value="gym">Gym</option>
+            <option value="breakfast">Free Breakfast</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="location">Location</label>
+          <select id="location">
+            <option value="">All Locations</option>
+            <option value="city-center">City Center</option>
+            <option value="beach">Beachfront</option>
+            <option value="airport">Near Airport</option>
+            <option value="downtown">Downtown</option>
+          </select>
+        </div>
+        
+        <div class="apply-filters">
+          <button class="btn btn-primary">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="room-grid">
+      <!-- Hotel 1 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&h=400&q=80" alt="Deluxe Hotel Room">
+        <div class="room-info">
+          <h3>Deluxe Hotel Room</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">4.5</span>
+          </div>
+          <span class="room-price">$150 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-utensils"></i> Breakfast</span>
+          </div>
+          <div class="details">King size bed, free WiFi, sea view, breakfast included.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 2 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&h=400&q=80" alt="Executive Suite">
+        <div class="room-info">
+          <h3>Executive Suite</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-value">5.0</span>
+          </div>
+          <span class="room-price">$250 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-couch"></i> Lounge</span>
+            <span><i class="fas fa-city"></i> City View</span>
+          </div>
+          <div class="details">2 bedrooms, luxury furniture, city skyline view.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 3 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&h=400&q=80" alt="Standard Double Room">
+        <div class="room-info">
+          <h3>Standard Double Room</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">4.0</span>
+          </div>
+          <span class="room-price">$120 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Double</span>
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-glass-martini-alt"></i> Minibar</span>
+          </div>
+          <div class="details">Double bed, free WiFi, minibar included.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 4 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&h=400&q=80" alt="Single Room">
+        <div class="room-info">
+          <h3>Single Room</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">3.5</span>
+          </div>
+          <span class="room-price">$80 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Single</span>
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-laptop"></i> Workspace</span>
+          </div>
+          <div class="details">1 single bed, workspace, free WiFi.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 5 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&h=400&q=80" alt="Family Suite">
+        <div class="room-info">
+          <h3>Family Suite</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">4.0</span>
+          </div>
+          <span class="room-price">$300 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-utensils"></i> Kitchen</span>
+            <span><i class="fas fa-couch"></i> Living Area</span>
+          </div>
+          <div class="details">3 bedrooms, kitchen, living area.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 6 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&h=400&q=80" alt="Presidential Suite">
+        <div class="room-info">
+          <h3>Presidential Suite</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-value">5.0</span>
+          </div>
+          <span class="room-price">$1000 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 5 Beds</span>
+            <span><i class="fas fa-swimming-pool"></i> Private Pool</span>
+            <span><i class="fas fa-concierge-bell"></i> Butler</span>
+          </div>
+          <div class="details">5 bedrooms, private pool, butler service.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 7 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&h=400&q=80" alt="Budget Room">
+        <div class="room-info">
+          <h3>Budget Room</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">3.0</span>
+          </div>
+          <span class="room-price">$50 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Single</span>
+            <span><i class="fas fa-shower"></i> Private Bath</span>
+            <span><i class="fas fa-tv"></i> TV</span>
+          </div>
+          <div class="details">Small room, 1 bed, basic amenities.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 8 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&h=400&q=80" alt="Ocean View Room">
+        <div class="room-info">
+          <h3>Ocean View Room</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">4.5</span>
+          </div>
+          <span class="room-price">$220 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Queen</span>
+            <span><i class="fas fa-umbrella-beach"></i> Balcony</span>
+            <span><i class="fas fa-water"></i> Ocean View</span>
+          </div>
+          <div class="details">Queen bed, balcony, ocean view.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 9 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&h=400&q=80" alt="Business Suite">
+        <div class="room-info">
+          <h3>Business Suite</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">4.0</span>
+          </div>
+          <span class="room-price">$350 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-laptop"></i> Workspace</span>
+            <span><i class="fas fa-utensils"></i> Breakfast</span>
+          </div>
+          <div class="details">1 bedroom, workspace, free breakfast.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 10 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&h=400&q=80" alt="King Suite">
+        <div class="room-info">
+          <h3>King Suite</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">4.5</span>
+          </div>
+          <span class="room-price">$400 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-couch"></i> Lounge</span>
+            <span><i class="fas fa-glass-martini-alt"></i> Minibar</span>
+          </div>
+          <div class="details">King bed, lounge area, mini bar.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 11 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&h=400&q=80" alt="Romantic Room">
+        <div class="room-info">
+          <h3>Romantic Room</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">4.0</span>
+          </div>
+          <span class="room-price">$180 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-hot-tub"></i> Jacuzzi</span>
+            <span><i class="fas fa-wine-glass-alt"></i> Wine</span>
+          </div>
+          <div class="details">Couple's special, jacuzzi, candlelight.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel 12 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&h=400&q=80" alt="Deluxe Suite">
+        <div class="room-info">
+          <h3>Deluxe Suite</h3>
+          <div class="rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">4.5</span>
+          </div>
+          <span class="room-price">$450 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-spa"></i> Luxury</span>
+            <span><i class="fas fa-city"></i> City View</span>
+          </div>
+          <div class="details">2 bedrooms, luxury amenities, city view.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <span class="dots">...</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Room<span>Rental</span></div>
+          <p>Your trusted partner for quality accommodations in Cambodia.</p>
+          <p>We offer the best apartments, hotels, condos, and standard rooms at competitive prices.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-phone"></i> +855 12 345 678</a>
+            <a href="#"><i class="fas fa-envelope"></i> info@roomrental.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> #123, Street 456, Phnom Penh</a>
+            <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="apartment.html"><i class="fas fa-building"></i> Apartments</a>
+            <a href="hotel.html"><i class="fas fa-hotel"></i> Hotels</a>
+            <a href="condo.html"><i class="fas fa-home"></i> Condos</a>
+            <a href="standard-rooms.html"><i class="fas fa-bed"></i> Standard Rooms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and rental deals</p>
+          <form>
+            <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:4px; border:none;">
+            <button type="submit" class="btn btn-accent" style="width:100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 RoomRental. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.querySelector('.mobile-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.querySelector('.mobile-toggle');
+      
+      if (navLinks.classList.contains('active') && 
+          !navLinks.contains(event.target) && 
+          !toggleBtn.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+    
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = 'rgba(0, 74, 173, 0.95)';
+      } else {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = '#004aad';
+      }
+    });
+    
+    // Hotel filtering functionality
+    document.querySelector('.apply-filters button').addEventListener('click', function() {
+      alert('Filters applied! In a real application, this would update the hotel listings.');
+    });
+  </script>
+</body>
+</html>

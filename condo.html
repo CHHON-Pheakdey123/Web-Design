@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Condos - RoomRental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="condo.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Room<span>Rental</span></a>
+      
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apartment.html">Apartments</a></li>
+          <li><a href="hotel.html">Hotels</a></li>
+          <li><a href="condo.html" class="active">Condos</a></li>
+          <li><a href="standard-rooms.html">Rooms-Rent</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="register.html" class="btn-register">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero-banner">
+      <div class="hero-content">
+        <h1>Premium Condos for Rent</h1>
+        <p>Discover luxury condos with premium amenities in prime locations</p>
+        <a href="#condos" class="btn btn-accent">Browse Condos</a>
+      </div>
+    </div>
+    
+    <h2 id="condos">Available Condos</h2>
+    
+    <div class="room-grid">
+      <!-- Condo 1 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1549187774-b4e9f9f6409e?auto=format&fit=crop&w=870&q=80" alt="Luxury Condo Downtown">
+        <div class="room-info">
+          <h3>Luxury Condo Downtown</h3>
+          <span class="room-price">$450 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+            <span><i class="fas fa-dumbbell"></i> Gym</span>
+          </div>
+          <div class="details">Premium downtown location with panoramic city views. Features modern appliances and luxury finishes.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 2 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Modern Condo with Balcony">
+        <div class="room-info">
+          <h3>Modern Condo with Balcony</h3>
+          <span class="room-price">$350 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-home"></i> Balcony</span>
+          </div>
+          <div class="details">Beautifully designed condo with spacious balcony overlooking the city. Perfect for professionals.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 3 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560448204-ff6c2f1e9f7a?auto=format&fit=crop&w=870&q=80" alt="Spacious Condo">
+        <div class="room-info">
+          <h3>Spacious Condo</h3>
+          <span class="room-price">$500 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-couch"></i> Furnished</span>
+          </div>
+          <div class="details">Fully furnished condo with modern amenities. Great for families with ample storage space.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 4 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=870&q=80" alt="Cozy Condo Near Park">
+        <div class="room-info">
+          <h3>Cozy Condo Near Park</h3>
+          <span class="room-price">$300 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-paw"></i> Pet Friendly</span>
+          </div>
+          <div class="details">Quiet location adjacent to city park. Features hardwood floors and modern kitchen appliances.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 5 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=870&q=80" alt="Penthouse Condo">
+        <div class="room-info">
+          <h3>Penthouse Condo</h3>
+          <span class="room-price">$800 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 4 Beds</span>
+            <span><i class="fas fa-bath"></i> 3 Baths</span>
+            <span><i class="fas fa-umbrella-beach"></i> Terrace</span>
+          </div>
+          <div class="details">Luxury penthouse with rooftop terrace featuring panoramic city views. High-end finishes throughout.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 6 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=870&q=80" alt="Affordable Condo">
+        <div class="room-info">
+          <h3>Affordable Condo</h3>
+          <span class="room-price">$220 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-subway"></i> Transport</span>
+            <span><i class="fas fa-couch"></i> Furnished</span>
+          </div>
+          <div class="details">Great value condo near public transport. Modern design with efficient use of space.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 7 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560449730-7767e4689dca?auto=format&fit=crop&w=870&q=80" alt="Family Condo">
+        <div class="room-info">
+          <h3>Family Condo</h3>
+          <span class="room-price">$400 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-child"></i> Kid-friendly</span>
+          </div>
+          <div class="details">Spacious condo in a safe neighborhood with playground nearby. Ideal for growing families.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 8 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1543966886-108d0a4bde17?auto=format&fit=crop&w=870&q=80" alt="Condo with Pool View">
+        <div class="room-info">
+          <h3>Condo with Pool View</h3>
+          <span class="room-price">$380 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+          </div>
+          <div class="details">Beautiful condo overlooking the community pool. Features large windows and modern design.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 9 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Quiet Condo">
+        <div class="room-info">
+          <h3>Quiet Condo</h3>
+          <span class="room-price">$270 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-volume-mute"></i> Soundproof</span>
+            <span><i class="fas fa-home"></i> Balcony</span>
+          </div>
+          <div class="details">Peaceful retreat with soundproof walls and private balcony. Perfect for remote workers.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 10 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560448204-ff6c2f1e9f7a?auto=format&fit=crop&w=870&q=80" alt="Downtown Condo">
+        <div class="room-info">
+          <h3>Downtown Condo</h3>
+          <span class="room-price">$320 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-shopping-cart"></i> Shopping</span>
+          </div>
+          <div class="details">Prime downtown location steps from shopping malls and restaurants. Modern amenities included.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 11 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=870&q=80" alt="Luxury Condo with Gym">
+        <div class="room-info">
+          <h3>Luxury Condo with Gym</h3>
+          <span class="room-price">$480 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-dumbbell"></i> Gym</span>
+          </div>
+          <div class="details">Premium condo with state-of-the-art fitness center and sauna. High-end finishes throughout.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 12 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=870&q=80" alt="Modern Studio Condo">
+        <div class="room-info">
+          <h3>Modern Studio Condo</h3>
+          <span class="room-price">$250 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Studio</span>
+            <span><i class="fas fa-home"></i> Balcony</span>
+            <span><i class="fas fa-couch"></i> Furnished</span>
+          </div>
+          <div class="details">Efficient studio condo with private balcony. Fully furnished with modern appliances.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 13 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=870&q=80" alt="Bright Condo">
+        <div class="room-info">
+          <h3>Bright Condo</h3>
+          <span class="room-price">$290 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-sun"></i> Natural light</span>
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+          </div>
+          <div class="details">Sun-filled condo with large windows providing abundant natural light. Modern finishes.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 14 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Penthouse Condo with Terrace">
+        <div class="room-info">
+          <h3>Penthouse Condo with Terrace</h3>
+          <span class="room-price">$750 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 4 Beds</span>
+            <span><i class="fas fa-bath"></i> 3 Baths</span>
+            <span><i class="fas fa-umbrella-beach"></i> Terrace</span>
+          </div>
+          <div class="details">Luxury penthouse featuring a spacious terrace with panoramic views. Gourmet kitchen included.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Condo 15 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1549187774-b4e9f9f6409e?auto=format&fit=crop&w=870&q=80" alt="Affordable Studio Condo">
+        <div class="room-info">
+          <h3>Affordable Studio Condo</h3>
+          <span class="room-price">$200 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Studio</span>
+            <span><i class="fas fa-subway"></i> Metro</span>
+            <span><i class="fas fa-couch"></i> Furnished</span>
+          </div>
+          <div class="details">Budget-friendly studio condo steps from metro station. Fully furnished with essential amenities.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <span class="dots">...</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Room<span>Rental</span></div>
+          <p>Your trusted partner for quality accommodations in Cambodia.</p>
+          <p>We offer the best apartments, hotels, condos, and standard rooms at competitive prices.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-phone"></i> +855 12 345 678</a>
+            <a href="#"><i class="fas fa-envelope"></i> info@roomrental.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> #123, Street 456, Phnom Penh</a>
+            <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="apartment.html"><i class="fas fa-building"></i> Apartments</a>
+            <a href="hotel.html"><i class="fas fa-hotel"></i> Hotels</a>
+            <a href="condo.html"><i class="fas fa-home"></i> Condos</a>
+            <a href="standard-rooms.html"><i class="fas fa-bed"></i> Standard Rooms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and rental deals</p>
+          <form>
+            <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:4px; border:none;">
+            <button type="submit" class="btn btn-accent" style="width:100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 RoomRental. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.querySelector('.mobile-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.querySelector('.mobile-toggle');
+      
+      if (navLinks.classList.contains('active') && 
+          !navLinks.contains(event.target) && 
+          !toggleBtn.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+    
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = 'rgba(0, 74, 173, 0.95)';
+      } else {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = '#004aad';
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

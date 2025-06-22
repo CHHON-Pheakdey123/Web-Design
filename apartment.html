@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View More Apartments - RoomRental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="apartment.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Room<span>Rental</span></a>
+      
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apartment.html" class="active">Apartments</a></li>
+          <li><a href="hotel.html">Hotels</a></li>
+          <li><a href="condo.html">Condos</a></li>
+          <li><a href="standard-rooms.html">Rooms-Rent</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-actions">
+        <div class="user-actions">
+  <a href="login.html" class="btn-login">Login</a>
+  <a href="register.html" class="btn-register">Register</a>
+</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>More Apartments</h2>
+    
+    <div class="filters">
+      <div class="filter-grid">
+        <div class="filter-group">
+          <label for="price-range">Price Range</label>
+          <select id="price-range">
+            <option value="">All Prices</option>
+            <option value="0-200">$0 - $200</option>
+            <option value="200-300">$200 - $300</option>
+            <option value="300-400">$300 - $400</option>
+            <option value="400+">$400+</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="bedrooms">Bedrooms</label>
+          <select id="bedrooms">
+            <option value="">Any</option>
+            <option value="1">1 Bedroom</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3+ Bedrooms</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="location">Location</label>
+          <select id="location">
+            <option value="">All Locations</option>
+            <option value="city-center">City Center</option>
+            <option value="suburbs">Suburbs</option>
+            <option value="riverside">Riverside</option>
+            <option value="downtown">Downtown</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="sort">Sort By</label>
+          <select id="sort">
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest Listings</option>
+            <option value="popular">Most Popular</option>
+          </select>
+        </div>
+        
+        <div class="apply-filters">
+          <button class="btn btn-primary">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="room-grid">
+      <!-- Apartment 1 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=870&q=80" alt="Cozy Apartment in City Center">
+        <div class="room-info">
+          <h3>Cozy Apartment in City Center</h3>
+          <span class="room-price">$200 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i> 45 m²</span>
+          </div>
+          <div class="details">Near public transport and shopping centers. Modern design with fully equipped kitchen.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 2 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1598928506311-c55dedf53b5e?auto=format&fit=crop&w=870&q=80" alt="Spacious Apartment with Balcony">
+        <div class="room-info">
+          <h3>Spacious Apartment with Balcony</h3>
+          <span class="room-price">$250 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i> 75 m²</span>
+          </div>
+          <div class="details">Balcony with city view, pet-friendly. Spacious living area with modern amenities.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 3 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=870&q=80" alt="Downtown Studio Apartment">
+        <div class="room-info">
+          <h3>Downtown Studio Apartment</h3>
+          <span class="room-price">$180 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Studio</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i> 35 m²</span>
+          </div>
+          <div class="details">Modern kitchen, close to nightlife. Perfect for singles or couples.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 4 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1600585153175-78cf7f2c1064?auto=format&fit=crop&w=870&q=80" alt="Elegant Apartment Near Riverside">
+        <div class="room-info">
+          <h3>Elegant Apartment Near Riverside</h3>
+          <span class="room-price">$270 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-car"></i> Parking</span>
+          </div>
+          <div class="details">River view, secure parking available. Beautifully furnished with high-end finishes.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 5 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=870&q=80" alt="Luxury Apartment with City View">
+        <div class="room-info">
+          <h3>Luxury Apartment with City View</h3>
+          <span class="room-price">$320 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+          </div>
+          <div class="details">Gym access, rooftop pool. Panoramic city views from floor-to-ceiling windows.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 6 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=870&q=80" alt="Modern Apartment with Gym">
+        <div class="room-info">
+          <h3>Modern Apartment with Gym</h3>
+          <span class="room-price">$280 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-dumbbell"></i> Gym</span>
+          </div>
+          <div class="details">Fitness center included, close to metro. Smart home features throughout.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 7 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=870&q=80" alt="Quiet Apartment in Residential Area">
+        <div class="room-info">
+          <h3>Quiet Apartment in Residential Area</h3>
+          <span class="room-price">$210 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-paw"></i> Pets</span>
+          </div>
+          <div class="details">Peaceful neighborhood, pet allowed. Close to parks and community amenities.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 8 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1600566753190-17bfc204fb0c?auto=format&fit=crop&w=870&q=80" alt="Compact Apartment for Singles">
+        <div class="room-info">
+          <h3>Compact Apartment for Singles</h3>
+          <span class="room-price">$170 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Studio</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+          </div>
+          <div class="details">Modern amenities, ideal for single occupants. Efficient layout with smart storage.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 9 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=870&q=80" alt="Spacious Family Apartment">
+        <div class="room-info">
+          <h3>Spacious Family Apartment</h3>
+          <span class="room-price">$350 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-child"></i> Kid-friendly</span>
+          </div>
+          <div class="details">Playground nearby, kid-friendly. Large living areas perfect for family gatherings.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 10 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560448118-0bdde01c8d24?auto=format&fit=crop&w=870&q=80" alt="Chic Apartment Near University">
+        <div class="room-info">
+          <h3>Chic Apartment Near University</h3>
+          <span class="room-price">$230 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-book"></i> Study</span>
+          </div>
+          <div class="details">Walking distance to campus, study room included. Vibrant neighborhood with cafes.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 11 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=870&q=80" alt="Newly Renovated Apartment">
+        <div class="room-info">
+          <h3>Newly Renovated Apartment</h3>
+          <span class="room-price">$260 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-home"></i> Renovated</span>
+          </div>
+          <div class="details">New kitchen appliances, close to shopping mall. Freshly painted with modern fixtures.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 12 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=870&q=80" alt="Apartment with Large Windows">
+        <div class="room-info">
+          <h3>Apartment with Large Windows</h3>
+          <span class="room-price">$240 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-sun"></i> Natural light</span>
+          </div>
+          <div class="details">Lots of natural light, modern design. Bright and airy atmosphere throughout.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 13 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1501183638714-351d1aabd3fb?auto=format&fit=crop&w=870&q=80" alt="Affordable Apartment Near Subway">
+        <div class="room-info">
+          <h3>Affordable Apartment Near Subway</h3>
+          <span class="room-price">$190 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Studio</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-subway"></i> Transport</span>
+          </div>
+          <div class="details">Convenient location, easy access to public transport. Perfect for commuters.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 14 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?auto=format&fit=crop&w=870&q=80" alt="Luxury Apartment with Smart Home Features">
+        <div class="room-info">
+          <h3>Luxury Apartment with Smart Home</h3>
+          <span class="room-price">$400 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-lock"></i> Security</span>
+          </div>
+          <div class="details">Smart lighting, automated blinds, security system. Premium finishes and appliances.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Apartment 15 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1494523501232-0d6c6f3bf136?auto=format&fit=crop&w=870&q=80" alt="Penthouse Apartment with Terrace">
+        <div class="room-info">
+          <h3>Penthouse Apartment with Terrace</h3>
+          <span class="room-price">$550 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 3 Baths</span>
+            <span><i class="fas fa-umbrella-beach"></i> Terrace</span>
+          </div>
+          <div class="details">Large terrace with city views, luxury finishes. Spacious layout with premium amenities.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <span class="dots">...</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Room<span>Rental</span></div>
+          <p>Your trusted partner for quality accommodations in Cambodia.</p>
+          <p>We offer the best apartments, hotels, condos, and standard rooms at competitive prices.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-phone"></i> +855 12 345 678</a>
+            <a href="#"><i class="fas fa-envelope"></i> info@roomrental.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> #123, Street 456, Phnom Penh</a>
+            <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="apartment.html"><i class="fas fa-building"></i> Apartments</a>
+            <a href="hotel.html"><i class="fas fa-hotel"></i> Hotels</a>
+            <a href="condo.html"><i class="fas fa-home"></i> Condos</a>
+            <a href="standard-rooms.html"><i class="fas fa-bed"></i> Standard Rooms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and rental deals</p>
+          <form>
+            <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:4px; border:none;">
+            <button type="submit" class="btn btn-accent" style="width:100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 RoomRental. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.querySelector('.mobile-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.querySelector('.mobile-toggle');
+      
+      if (navLinks.classList.contains('active') && 
+          !navLinks.contains(event.target) && 
+          !toggleBtn.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+    
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = 'rgba(0, 74, 173, 0.95)';
+      } else {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = '#004aad';
+      }
+    });
+    
+    // Apartment filtering functionality
+    document.querySelector('.apply-filters button').addEventListener('click', function() {
+      alert('Filters applied! In a real application, this would update the apartment listings.');
+    });
+  </script>
+</body>
+</html>

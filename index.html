@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Rental - Find Your Perfect Space</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Room<span>Rental</span></a>
+      
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="insex.html" class="active">Home</a></li>
+          <li><a href="apartment.html">Apartments</a></li>
+          <li><a href="hotel.html">Hotels</a></li>
+          <li><a href="condo.html">Condos</a></li>
+          <li><a href="standard-rooms.html">Rooms-Rent</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="register.html" class="btn-register">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Find Your Perfect Room Quickly & Easily</h2>
+      <p>Discover affordable rooms for rent in your preferred locations</p>
+      <form class="search-form" action="listings.html" method="GET">
+        <input type="text" name="keyword" placeholder="Search by location, type, price..." />
+        <select name="type">
+          <option value="">All Types</option>
+          <option value="apartment">Apartment</option>
+          <option value="hotel">Hotel</option>
+          <option value="condo">Condo</option>
+          <option value="room">Room</option>
+        </select>
+        <button type="submit" class="btn-primary">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="featured-rooms container">
+    <h3 class="section-title">Featured Rooms</h3>
+    
+    <h4 class="category-title">Apartments</h4>
+    <div class="room-grid">
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=870&q=80" alt="Apartment">
+        <div class="room-info">
+          <h4>Cozy Apartment in City Center</h4>
+          <span class="room-price">$200 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i> 850 sqft</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?auto=format&fit=crop&w=870&q=80" alt="Apartment">
+        <div class="room-info">
+          <h4>Spacious Apartment with Balcony</h4>
+          <span class="room-price">$250 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-ruler-combined"></i> 1100 sqft</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=870&q=80" alt="Apartment">
+        <div class="room-info">
+          <h4>Downtown Studio Apartment</h4>
+          <span class="room-price">$180 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i> 600 sqft</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=870&q=80" alt="Apartment">
+        <div class="room-info">
+          <h4>Elegant Apartment Near Riverside</h4>
+          <span class="room-price">$270 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-ruler-combined"></i> 950 sqft</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="view-more-container">
+      <a href="apartment.html" class="btn btn-primary">View More Apartments</a>
+    </div>
+
+    <h4 class="category-title">Hotels</h4>
+    <div class="room-grid">
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Hotel">
+        <div class="room-info">
+          <h4>Modern Hotel Room Near Park</h4>
+          <span class="room-price">$180 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=870&q=80" alt="Hotel">
+        <div class="room-info">
+          <h4>Luxury Hotel Suite</h4>
+          <span class="room-price">$350 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King Bed</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=870&q=80" alt="Hotel">
+        <div class="room-info">
+          <h4>Budget Hotel Room</h4>
+          <span class="room-price">$120 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> 1 Bath</span>
+            <span><i class="fas fa-utensils"></i> Breakfast</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=870&q=80" alt="Hotel">
+        <div class="room-info">
+          <h4>Simple Hotel Stay</h4>
+          <span class="room-price">$100 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> Shared Bath</span>
+            <span><i class="fas fa-tv"></i> TV</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="view-more-container">
+      <a href="hotel.html" class="btn btn-primary">View More Hotels</a>
+    </div>
+
+    <h4 class="category-title">Condos</h4>
+    <div class="room-grid">
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=870&q=80" alt="Condo">
+        <div class="room-info">
+          <h4>Modern Condo with Amenities</h4>
+          <span class="room-price">$310 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-dumbbell"></i> Gym</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=870&q=80" alt="Condo">
+        <div class="room-info">
+          <h4>Stylish High-Rise Condo</h4>
+          <span class="room-price">$500 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2.5 Baths</span>
+            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80?auto=format&fit=crop&w=870&q=80" alt="Condo">
+        <div class="room-info">
+          <h4>Bright Condo with Kitchen</h4>
+          <span class="room-price">$350 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-car"></i> Parking</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=870&q=80" alt="Condo">
+        <div class="room-info">
+          <h4>Family-Friendly Condo</h4>
+          <span class="room-price">$320 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Beds</span>
+            <span><i class="fas fa-bath"></i> 2 Baths</span>
+            <span><i class="fas fa-child"></i> Play Area</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-more-container">
+      <a href="condo.html" class="btn btn-primary">View More Condos</a>
+    </div>
+
+    <h4 class="category-title">Standard Rental Rooms</h4>
+    <div class="room-grid">
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=870&q=80" alt="Room">
+        <div class="room-info">
+          <h4>Bright Room with Balcony</h4>
+          <span class="room-price">$220 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> Shared Bath</span>
+            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=870&q=80" alt="Room">
+        <div class="room-info">
+          <h4>Quiet Room in Suburbs</h4>
+          <span class="room-price">$150 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> Shared Bath</span>
+            <span><i class="fas fa-parking"></i> Free Parking</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=870&q=80" alt="Room">
+        <div class="room-info">
+          <h4>Furnished Room Near Market</h4>
+          <span class="room-price">$180 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-bath"></i> Private Bath</span>
+            <span><i class="fas fa-utensils"></i> Kitchen Access</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=870&q=80" alt="Room">
+        <div class="room-info">
+          <h4>Shared Room with Utilities</h4>
+          <span class="room-price">$100 / month</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Shared Bed</span>
+            <span><i class="fas fa-bath"></i> Shared Bath</span>
+            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+          </div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-more-container">
+      <a href="standard-rooms.html" class="btn btn-primary">View More Rooms</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h3 class="section-title">What Our Tenants Say</h3>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"I found my perfect apartment through RoomRental within a week! The process was smooth and the landlord was very responsive. Highly recommend their service."</p>
+          <strong>- Sopheak, Phnom Penh</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Affordable prices and fast contact with landlords. The website is easy to navigate and the search filters helped me find exactly what I was looking for."</p>
+          <strong>- Dara, Siem Reap</strong>
+        </div>
+        <div class="testimonial">
+          <p>"As a student, I was able to find a budget-friendly room near my university. The booking process was straightforward and I moved in the next day. Great service!"</p>
+          <strong>- Vicheka, Battambang</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Room<span>Rental</span></div>
+          <p>Your trusted partner for quality accommodations in Cambodia.</p>
+          <p>We offer the best apartments, hotels, condos, and standard rooms at competitive prices.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-phone"></i> +855 12 345 678</a>
+            <a href="#"><i class="fas fa-envelope"></i> info@roomrental.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> #123, Street 456, Phnom Penh</a>
+            <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="apartment.html"><i class="fas fa-building"></i> Apartments</a>
+            <a href="hotel.html"><i class="fas fa-hotel"></i> Hotels</a>
+            <a href="condo.html"><i class="fas fa-home"></i> Condos</a>
+            <a href="standard-rooms.html"><i class="fas fa-bed"></i> Standard Rooms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and rental deals</p>
+          <form>
+            <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:4px; border:none;">
+            <button type="submit" class="btn btn-accent" style="width:100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 RoomRental. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.querySelector('.mobile-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.querySelector('.mobile-toggle');
+      
+      if (navLinks.classList.contains('active') && 
+          !navLinks.contains(event.target) && 
+          !toggleBtn.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+    
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = 'rgba(0, 74, 173, 0.95)';
+      } else {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = '#004aad';
+      }
+    });
+  </script>
+</body>
+</html>

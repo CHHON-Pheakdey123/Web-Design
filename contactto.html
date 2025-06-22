@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Details</title>
+  <link rel="stylesheet" href="contactto.css">
+</head>
+<body>
+
+  <div class="request-box">
+    <h3>Request Details</h3>
+    <div class="input-row">
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="🇰🇭 Phone" />
+    </div>
+    <input type="email" placeholder="✉ Please enter your email address" />
+    <textarea placeholder="✎ Write message to agent here"></textarea>
+    <button class="submit-btn" onclick="submitForm()">Submit details</button>
+
+    <div class="or-text">Or contact us via</div>
+    <div class="contact-buttons">
+      <button><span>📞</span> Phone</button>
+      <button><span>📨</span> Telegram</button>
+      <button><span>💬</span> Whatsapp</button>
+      <button><span>🟢</span> Wechat</button>
+    </div>
+  </div>
+
+  <script>
+    function submitForm() {
+      alert("Details submitted successfully!");
+    }
+  </script>
+
+</body>
+</html>

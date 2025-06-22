@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Standard Rooms - RoomRental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="standard-room.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Room<span>Rental</span></a>
+      
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apartment.html">Apartments</a></li>
+          <li><a href="hotel.html">Hotels</a></li>
+          <li><a href="condo.html">Condos</a></li>
+          <li><a href="standard-rooms.html" class="active">Rooms-Rent</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="user-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="register.html" class="btn-register">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Standard Rooms</h2>
+    
+    <div class="filters">
+      <div class="filter-grid">
+        <div class="filter-group">
+          <label for="price-range">Price Range</label>
+          <select id="price-range">
+            <option value="">All Prices</option>
+            <option value="0-100">$0 - $100</option>
+            <option value="100-150">$100 - $150</option>
+            <option value="150-200">$150 - $200</option>
+            <option value="200+">$200+</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="room-type">Room Type</label>
+          <select id="room-type">
+            <option value="">All Types</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+            <option value="family">Family</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="amenities">Amenities</label>
+          <select id="amenities">
+            <option value="">All Amenities</option>
+            <option value="wifi">Wi-Fi</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="parking">Parking</option>
+            <option value="pool">Pool</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="sort">Sort By</label>
+          <select id="sort">
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest Listings</option>
+            <option value="popular">Most Popular</option>
+          </select>
+        </div>
+        
+        <div class="apply-filters">
+          <button class="btn btn-primary">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="room-grid">
+      <!-- Room 1 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Standard Single Room">
+        <div class="room-info">
+          <h3>Standard Single Room</h3>
+          <span class="room-price">$90 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bed</span>
+            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+            <span><i class="fas fa-snowflake"></i> AC</span>
+          </div>
+          <div class="details">Comfortable single room perfect for solo travelers. Includes workspace and ensuite bathroom.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 2 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=870&q=80" alt="Standard Double Room">
+        <div class="room-info">
+          <h3>Standard Double Room</h3>
+          <span class="room-price">$120 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+            <span><i class="fas fa-bath"></i> Ensuite</span>
+            <span><i class="fas fa-tv"></i> TV</span>
+          </div>
+          <div class="details">Spacious double room with comfortable beds and modern amenities. Perfect for couples or friends.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 3 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560448204-ff6c2f1e9f7a?auto=format&fit=crop&w=870&q=80" alt="Standard Twin Room">
+        <div class="room-info">
+          <h3>Standard Twin Room</h3>
+          <span class="room-price">$110 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Single Beds</span>
+            <span><i class="fas fa-desktop"></i> Desk</span>
+            <span><i class="fas fa-toilet-paper"></i> Toiletries</span>
+          </div>
+          <div class="details">Two comfortable single beds with dedicated workspace. Ideal for business travelers or friends.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 4 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=870&q=80" alt="Standard Suite Room">
+        <div class="room-info">
+          <h3>Standard Suite Room</h3>
+          <span class="room-price">$200 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 1 Bedroom</span>
+            <span><i class="fas fa-couch"></i> Living Area</span>
+            <span><i class="fas fa-wine-bottle"></i> Mini Bar</span>
+          </div>
+          <div class="details">Luxurious suite with separate bedroom and living area. Perfect for extended stays or special occasions.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 5 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560449730-7767e4689dca?auto=format&fit=crop&w=870&q=80" alt="Standard Family Room">
+        <div class="room-info">
+          <h3>Standard Family Room</h3>
+          <span class="room-price">$180 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-child"></i> Kid-friendly</span>
+            <span><i class="fas fa-utensils"></i> Kitchenette</span>
+          </div>
+          <div class="details">Spacious family accommodation with two separate bedrooms. Includes child-friendly amenities and play area.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 6 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1543966886-108d0a4bde17?auto=format&fit=crop&w=870&q=80" alt="Standard Accessible Room">
+        <div class="room-info">
+          <h3>Standard Accessible Room</h3>
+          <span class="room-price">$100 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-wheelchair"></i> Accessible</span>
+            <span><i class="fas fa-shower"></i> Roll-in Shower</span>
+            <span><i class="fas fa-first-aid"></i> Safety Features</span>
+          </div>
+          <div class="details">Wheelchair accessible room with special safety features and spacious layout for comfortable mobility.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 7 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1501117716987-c8fefcd0b27d?auto=format&fit=crop&w=870&q=80" alt="Standard Deluxe Room">
+        <div class="room-info">
+          <h3>Standard Deluxe Room</h3>
+          <span class="room-price">$220 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King Bed</span>
+            <span><i class="fas fa-spa"></i> Premium Bath</span>
+            <span><i class="fas fa-coffee"></i> Coffee Maker</span>
+          </div>
+          <div class="details">Premium room with king-size bed and luxury bathroom amenities. Perfect for a luxurious stay.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 8 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Standard Executive Room">
+        <div class="room-info">
+          <h3>Standard Executive Room</h3>
+          <span class="room-price">$250 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-desktop"></i> Work Desk</span>
+            <span><i class="fas fa-wifi"></i> Fast Wi-Fi</span>
+            <span><i class="fas fa-city"></i> City View</span>
+          </div>
+          <div class="details">Designed for business travelers with dedicated workspace and high-speed internet. City views included.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 9 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=870&q=80" alt="Standard Studio Room">
+        <div class="room-info">
+          <h3>Standard Studio Room</h3>
+          <span class="room-price">$130 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-utensils"></i> Kitchenette</span>
+            <span><i class="fas fa-couch"></i> Living Area</span>
+            <span><i class="fas fa-bed"></i> Queen Bed</span>
+          </div>
+          <div class="details">Open plan studio with kitchenette and living area. Perfect for longer stays with cooking facilities.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 10 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=870&q=80" alt="Standard Balcony Room">
+        <div class="room-info">
+          <h3>Standard Balcony Room</h3>
+          <span class="room-price">$140 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-umbrella-beach"></i> Balcony</span>
+            <span><i class="fas fa-couch"></i> Seating Area</span>
+            <span><i class="fas fa-tree"></i> Garden View</span>
+          </div>
+          <div class="details">Enjoy your private balcony with garden views. Perfect for relaxing evenings outdoors.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 11 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1560449730-7767e4689dca?auto=format&fit=crop&w=870&q=80" alt="Standard Penthouse Room">
+        <div class="room-info">
+          <h3>Standard Penthouse Room</h3>
+          <span class="room-price">$300 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+            <span><i class="fas fa-building"></i> Rooftop Access</span>
+            <span><i class="fas fa-crown"></i> Luxury</span>
+          </div>
+          <div class="details">Luxury penthouse with multiple bedrooms and exclusive rooftop access. Premium furnishings throughout.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 12 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1543966886-108d0a4bde17?auto=format&fit=crop&w=870&q=80" alt="Standard Garden Room">
+        <div class="room-info">
+          <h3>Standard Garden Room</h3>
+          <span class="room-price">$150 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-tree"></i> Garden View</span>
+            <span><i class="fas fa-umbrella"></i> Patio</span>
+            <span><i class="fas fa-chair"></i> Outdoor Seating</span>
+          </div>
+          <div class="details">Beautiful garden views with private patio access. Relax in nature without leaving your room.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 13 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1501117716987-c8fefcd0b27d?auto=format&fit=crop&w=870&q=80" alt="Standard Romantic Room">
+        <div class="room-info">
+          <h3>Standard Romantic Room</h3>
+          <span class="room-price">$170 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-hot-tub"></i> Jacuzzi</span>
+            <span><i class="fas fa-candle"></i> Candlelight</span>
+            <span><i class="fas fa-heart"></i> For Couples</span>
+          </div>
+          <div class="details">Specially designed for romantic getaways with jacuzzi and intimate ambiance. Perfect for couples.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 14 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=870&q=80" alt="Standard King Room">
+        <div class="room-info">
+          <h3>Standard King Room</h3>
+          <span class="room-price">$210 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King Bed</span>
+            <span><i class="fas fa-couch"></i> Lounge Area</span>
+            <span><i class="fas fa-glass-martini"></i> Minibar</span>
+          </div>
+          <div class="details">Spacious room with king-size bed and comfortable lounge area. Enjoy premium minibar selections.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 15 -->
+      <div class="room-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=870&q=80" alt="Standard Executive Suite">
+        <div class="room-info">
+          <h3>Standard Executive Suite</h3>
+          <span class="room-price">$280 / night</span>
+          <div class="room-features">
+            <span><i class="fas fa-couch"></i> Living Room</span>
+            <span><i class="fas fa-briefcase"></i> Workspace</span>
+            <span><i class="fas fa-city"></i> City View</span>
+          </div>
+          <div class="details">Premium executive suite with separate living room and dedicated workspace. Panoramic city views.</div>
+          <div class="room-buttons">
+            <a href="contactto.html" class="btn btn-secondary">Contact</a>
+            <a href="booking.html" class="btn btn-accent">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <span class="dots">...</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Room<span>Rental</span></div>
+          <p>Your trusted partner for quality accommodations in Cambodia.</p>
+          <p>We offer the best apartments, hotels, condos, and standard rooms at competitive prices.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-phone"></i> +855 12 345 678</a>
+            <a href="#"><i class="fas fa-envelope"></i> info@roomrental.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> #123, Street 456, Phnom Penh</a>
+            <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="apartment.html"><i class="fas fa-building"></i> Apartments</a>
+            <a href="hotel.html"><i class="fas fa-hotel"></i> Hotels</a>
+            <a href="condo.html"><i class="fas fa-home"></i> Condos</a>
+            <a href="standard-rooms.html"><i class="fas fa-bed"></i> Standard Rooms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and rental deals</p>
+          <form>
+            <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:4px; border:none;">
+            <button type="submit" class="btn btn-accent" style="width:100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 RoomRental. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.querySelector('.mobile-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.querySelector('.mobile-toggle');
+      
+      if (navLinks.classList.contains('active') && 
+          !navLinks.contains(event.target) && 
+          !toggleBtn.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+    
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = 'rgba(0, 74, 173, 0.95)';
+      } else {
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        header.style.background = '#004aad';
+      }
+    });
+    
+    // Room filtering functionality
+    document.querySelector('.apply-filters button').addEventListener('click', function() {
+      alert('Filters applied! In a real application, this would update the room listings.');
+    });
+    
+    // Pagination functionality
+    document.querySelectorAll('.pagination a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all links
+        document.querySelectorAll('.pagination a').forEach(a => {
+          a.classList.remove('active');
+        });
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // In a real app, this would load the next page of results
+        alert(`Loading page ${this.textContent}`);
+      });
+    });
+  </script>
+</body>
+</html>
